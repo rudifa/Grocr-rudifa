@@ -1,5 +1,5 @@
 /// Copyright (c) 2018 Razeware LLC
-///
+/// 
 /// Permission is hereby granted, free of charge, to any person obtaining a copy
 /// of this software and associated documentation files (the "Software"), to deal
 /// in the Software without restriction, including without limitation the rights
@@ -32,7 +32,7 @@ import UIKit
 class GroceryListTableViewController: UITableViewController {
     // MARK: Constants
 
-    let listToUsers = "ListToUsers"
+    let goToOnlineUsers = "goToOnlineUsers"
 
     // MARK: Properties
 
@@ -174,6 +174,6 @@ class GroceryListTableViewController: UITableViewController {
     }
 
     @objc func userCountButtonDidTouch() {
-        performSegue(withIdentifier: listToUsers, sender: nil)
+        performSegue(withIdentifier: goToOnlineUsers, sender: nil)
     }
 }

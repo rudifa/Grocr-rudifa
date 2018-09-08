@@ -36,6 +36,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         Database.database().isPersistenceEnabled = true
+
+        if ProcessInfo.processInfo.arguments.contains("XCUITests") {
+            print("application didFinishLaunchingWithOptions")
+            window?.layer.speed = 100.0 // speeds up the test in simulator about 3x
+            _ = LoginManager.shared.userLogout() // for tests, start in a known state
+        }
+
         return true
     }
 }

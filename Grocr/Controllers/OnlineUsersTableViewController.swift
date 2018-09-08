@@ -1,5 +1,5 @@
 /// Copyright (c) 2018 Razeware LLC
-///
+/// 
 /// Permission is hereby granted, free of charge, to any person obtaining a copy
 /// of this software and associated documentation files (the "Software"), to deal
 /// in the Software without restriction, including without limitation the rights
@@ -81,7 +81,7 @@ class OnlineUsersTableViewController: UITableViewController {
 
     // MARK: Actions
 
-    @IBAction func signoutButtonPressed(_: AnyObject) {
+    fileprivate func userLogout() {
         let user = Auth.auth().currentUser!
         let onlineRef = Database.database().reference(withPath: "online/\(user.uid)")
         onlineRef.removeValue { error, _ in
@@ -96,5 +96,9 @@ class OnlineUsersTableViewController: UITableViewController {
                 print("Auth sign out failed: \(error)")
             }
         }
+    }
+
+    @IBAction func signoutButtonPressed(_: AnyObject) {
+        userLogout()
     }
 }

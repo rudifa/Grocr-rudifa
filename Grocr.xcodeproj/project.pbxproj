@@ -18,7 +18,29 @@
 		649F422820438D5400B21997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 649F422720438D5400B21997 /* Main.storyboard */; };
 		95F65799424252A5A9C5A1C7 /* libPods-Grocr.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9329CDD67FBDDC24EC3B34C8 /* libPods-Grocr.a */; };
 		9D136571213EFD13009D8833 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D136570213EFD12009D8833 /* GoogleService-Info.plist */; };
+		9D60D6E0214444F200AFFA0F /* GrocrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D60D6DF214444F200AFFA0F /* GrocrUITests.swift */; };
+		9D60D6EE2144450200AFFA0F /* GrocrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D60D6ED2144450200AFFA0F /* GrocrTests.swift */; };
+		9D60D6F621444C7500AFFA0F /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D60D6F521444C7500AFFA0F /* LoginManager.swift */; };
+		9DAC1EB22145812500DD72F2 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC1EB12145812500DD72F2 /* DateUtil.swift */; };
+		9DAC1EBA2146A90200DD72F2 /* XCTestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC1EB82146A8EC00DD72F2 /* XCTestUtil.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D60D6E2214444F200AFFA0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 645D788C204344160093B00C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 645D7893204344160093B00C;
+			remoteInfo = Grocr;
+		};
+		9D60D6F02144450200AFFA0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 645D788C204344160093B00C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 645D7893204344160093B00C;
+			remoteInfo = Grocr;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		645D7894204344160093B00C /* Grocr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grocr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +59,15 @@
 		9329CDD67FBDDC24EC3B34C8 /* libPods-Grocr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Grocr.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D136570213EFD12009D8833 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9D804A382146AF93000C4AF9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D60D6DD214444F200AFFA0F /* GrocrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrocrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D60D6DF214444F200AFFA0F /* GrocrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrocrUITests.swift; sourceTree = "<group>"; };
+		9D60D6E1214444F200AFFA0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D60D6EB2144450200AFFA0F /* GrocrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrocrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D60D6ED2144450200AFFA0F /* GrocrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrocrTests.swift; sourceTree = "<group>"; };
+		9D60D6EF2144450200AFFA0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D60D6F521444C7500AFFA0F /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		9DAC1EB12145812500DD72F2 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		9DAC1EB82146A8EC00DD72F2 /* XCTestUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +76,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				95F65799424252A5A9C5A1C7 /* libPods-Grocr.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D60D6DA214444F200AFFA0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D60D6E82144450200AFFA0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +118,9 @@
 			children = (
 				9D804A382146AF93000C4AF9 /* README.md */,
 				645D7896204344160093B00C /* Grocr */,
+				9DAC1EB0214580FE00DD72F2 /* Util */,
+				9D60D6DE214444F200AFFA0F /* GrocrUITests */,
+				9D60D6EC2144450200AFFA0F /* GrocrTests */,
 				645D7895204344160093B00C /* Products */,
 				2910132D4FF4268C52F550F2 /* Pods */,
 				619CCEE8BE30B25D8D2DB04F /* Frameworks */,
@@ -83,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				645D7894204344160093B00C /* Grocr.app */,
+				9D60D6DD214444F200AFFA0F /* GrocrUITests.xctest */,
+				9D60D6EB2144450200AFFA0F /* GrocrTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +157,7 @@
 			children = (
 				649F422420438D2E00B21997 /* GroceryItem.swift */,
 				649F422320438D2E00B21997 /* User.swift */,
+				9D60D6F521444C7500AFFA0F /* LoginManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -119,6 +170,33 @@
 				649F421E20438D1A00B21997 /* OnlineUsersTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9D60D6DE214444F200AFFA0F /* GrocrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D60D6DF214444F200AFFA0F /* GrocrUITests.swift */,
+				9D60D6E1214444F200AFFA0F /* Info.plist */,
+			);
+			path = GrocrUITests;
+			sourceTree = "<group>";
+		};
+		9D60D6EC2144450200AFFA0F /* GrocrTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D60D6ED2144450200AFFA0F /* GrocrTests.swift */,
+				9D60D6EF2144450200AFFA0F /* Info.plist */,
+			);
+			path = GrocrTests;
+			sourceTree = "<group>";
+		};
+		9DAC1EB0214580FE00DD72F2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9DAC1EB82146A8EC00DD72F2 /* XCTestUtil.swift */,
+				9DAC1EB12145812500DD72F2 /* DateUtil.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,15 +222,51 @@
 			productReference = 645D7894204344160093B00C /* Grocr.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9D60D6DC214444F200AFFA0F /* GrocrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D60D6E6214444F200AFFA0F /* Build configuration list for PBXNativeTarget "GrocrUITests" */;
+			buildPhases = (
+				9D60D6D9214444F200AFFA0F /* Sources */,
+				9D60D6DA214444F200AFFA0F /* Frameworks */,
+				9D60D6DB214444F200AFFA0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D60D6E3214444F200AFFA0F /* PBXTargetDependency */,
+			);
+			name = GrocrUITests;
+			productName = GrocrUITests;
+			productReference = 9D60D6DD214444F200AFFA0F /* GrocrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9D60D6EA2144450200AFFA0F /* GrocrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D60D6F22144450200AFFA0F /* Build configuration list for PBXNativeTarget "GrocrTests" */;
+			buildPhases = (
+				9D60D6E72144450200AFFA0F /* Sources */,
+				9D60D6E82144450200AFFA0F /* Frameworks */,
+				9D60D6E92144450200AFFA0F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D60D6F12144450200AFFA0F /* PBXTargetDependency */,
+			);
+			name = GrocrTests;
+			productName = GrocrTests;
+			productReference = 9D60D6EB2144450200AFFA0F /* GrocrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		645D788C204344160093B00C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Razeware LLC";
+				ORGANIZATIONNAME = com.rudifa;
 				TargetAttributes = {
 					645D7893204344160093B00C = {
 						CreatedOnToolsVersion = 9.2;
@@ -162,6 +276,16 @@
 								enabled = 1;
 							};
 						};
+					};
+					9D60D6DC214444F200AFFA0F = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 645D7893204344160093B00C;
+					};
+					9D60D6EA2144450200AFFA0F = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 645D7893204344160093B00C;
 					};
 				};
 			};
@@ -179,6 +303,8 @@
 			projectRoot = "";
 			targets = (
 				645D7893204344160093B00C /* Grocr */,
+				9D60D6DC214444F200AFFA0F /* GrocrUITests */,
+				9D60D6EA2144450200AFFA0F /* GrocrTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +318,20 @@
 				9D136571213EFD13009D8833 /* GoogleService-Info.plist in Resources */,
 				645D78A2204344160093B00C /* LaunchScreen.storyboard in Resources */,
 				645D789F204344160093B00C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D60D6DB214444F200AFFA0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D60D6E92144450200AFFA0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,14 +395,49 @@
 			files = (
 				649F422020438D1B00B21997 /* LoginViewController.swift in Sources */,
 				649F422120438D1B00B21997 /* OnlineUsersTableViewController.swift in Sources */,
+				9D60D6F621444C7500AFFA0F /* LoginManager.swift in Sources */,
 				649F422520438D2E00B21997 /* User.swift in Sources */,
 				649F422220438D1B00B21997 /* GroceryListTableViewController.swift in Sources */,
+				9DAC1EB22145812500DD72F2 /* DateUtil.swift in Sources */,
 				645D7898204344160093B00C /* AppDelegate.swift in Sources */,
 				649F422620438D2E00B21997 /* GroceryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D60D6D9214444F200AFFA0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D60D6E0214444F200AFFA0F /* GrocrUITests.swift in Sources */,
+				9DAC1EBA2146A90200DD72F2 /* XCTestUtil.swift in Sources */,
+				9DAC1EB32145812B00DD72F2 /* DateUtil.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D60D6E72144450200AFFA0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D60D6EE2144450200AFFA0F /* GrocrTests.swift in Sources */,
+				9DAC1EBB2146A9B200DD72F2 /* XCTestUtil.swift in Sources */,
+				9DAC1EB42145812C00DD72F2 /* DateUtil.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D60D6E3214444F200AFFA0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 645D7893204344160093B00C /* Grocr */;
+			targetProxy = 9D60D6E2214444F200AFFA0F /* PBXContainerItemProxy */;
+		};
+		9D60D6F12144450200AFFA0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 645D7893204344160093B00C /* Grocr */;
+			targetProxy = 9D60D6F02144450200AFFA0F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		645D78A0204344160093B00C /* LaunchScreen.storyboard */ = {
@@ -419,6 +594,76 @@
 			};
 			name = Release;
 		};
+		9D60D6E4214444F200AFFA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHA84NAPNA;
+				INFOPLIST_FILE = GrocrUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rudifa.GrocrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Grocr;
+			};
+			name = Debug;
+		};
+		9D60D6E5214444F200AFFA0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHA84NAPNA;
+				INFOPLIST_FILE = GrocrUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rudifa.GrocrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Grocr;
+			};
+			name = Release;
+		};
+		9D60D6F32144450200AFFA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHA84NAPNA;
+				INFOPLIST_FILE = GrocrTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rudifa.GrocrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grocr.app/Grocr";
+			};
+			name = Debug;
+		};
+		9D60D6F42144450200AFFA0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LHA84NAPNA;
+				INFOPLIST_FILE = GrocrTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rudifa.GrocrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grocr.app/Grocr";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -436,6 +681,24 @@
 			buildConfigurations = (
 				645D78A7204344160093B00C /* Debug */,
 				645D78A8204344160093B00C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D60D6E6214444F200AFFA0F /* Build configuration list for PBXNativeTarget "GrocrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D60D6E4214444F200AFFA0F /* Debug */,
+				9D60D6E5214444F200AFFA0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D60D6F22144450200AFFA0F /* Build configuration list for PBXNativeTarget "GrocrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D60D6F32144450200AFFA0F /* Debug */,
+				9D60D6F42144450200AFFA0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
