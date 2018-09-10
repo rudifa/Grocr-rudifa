@@ -26,21 +26,20 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import Foundation
 import Firebase
+import Foundation
 
 struct User {
-  
-  let uid: String
-  let email: String
-  
-  init(authData: Firebase.User) {
-    uid = authData.uid
-    email = authData.email!
-  }
-  
-  init(uid: String, email: String) {
-    self.uid = uid
-    self.email = email
-  }
+    let uid: String
+    let email: String
+
+    init(authData: Firebase.User) {
+        uid = authData.uid
+        email = authData.email!
+    }
+
+    init(uid: String, email: String) {
+        self.uid = uid
+        self.email = email
+    }
 }
